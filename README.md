@@ -1,5 +1,6 @@
 # WinFetch
 A lightweight neofetch-style system info tool for Windows, written in C.
+
 An easy and familiar project for first-year CS students to tinker with and make their first open-source contributions using C!
 ![](image.png)
 ## Requirements
