@@ -1,5 +1,6 @@
 # WinFetch
 A lightweight neofetch-style system info tool for Windows, written in C.
+
 An easy and familiar project for first-year CS students to tinker with and make their first open-source contributions using C!
 
 ![](image.png)
@@ -39,3 +40,9 @@ Edit `main.c` to your liking using the available functions. All functions return
 - `get_ram_total()` — Total RAM (e.g. `16.00 GiB`)
 - `get_ram_used()` — Used RAM (e.g. `8.23 GiB`)
 - `get_ram_available()` — Available RAM (e.g. `7.77 GiB`)
+
+
+## Contributing
+You're free to do anything with it!
+
+The use gen AI is fine but it is discouraged to depend on it 100%. Reading and understanding what the AI generated before submitting goes a long way <3
