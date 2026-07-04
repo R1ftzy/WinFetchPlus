@@ -1,4 +1,5 @@
 # WinFetchPlus
+
 A lightweight neofetch-style system info tool for Windows, written in C.
 
 Still simple but more advanced than WinFetch.
@@ -6,28 +7,37 @@ Still simple but more advanced than WinFetch.
 ![](image.png)
 
 ## Requirements
-- GCC 
+
+- GCC
 - make
 
 Feel free to try out [dev_setup](https://github.com/TaH00R/dev_setup) for a one-stop way to install the tools you need.
 
 ## Setup
+
 - Clone/download the repo and go into that folder
 - Open the terminal and run:
+
 ```
 make
 ```
+
 - This will use the config in ~~`main.c`~~ `config.c`
 - Your exe will be in the `/bin` folder to use
 - Add bin path to your environment variables to use from anywhere
 - Run using optional logo arguement
+
 ```
 winfetch [logo_name]
 ```
+
 ## Customization
+
 Edit `config.c` to your liking using the available functions. All functions return a string, so they work directly inside `snprintf`.
 For logos, you can use the few given in `/logos` or add new one new ascii art!
+
 ### Available functions
+
 - `get_user()` — Your username (e.g. `r1ftzy`)
 - `get_hostname()` — Your system name (e.g. `LAPTOP-XXXXXXX`)
 - `get_device()` — Your device model (e.g. `ROG Zephyrus G16 GU605MV_GU605MV`)
@@ -53,6 +63,7 @@ For logos, you can use the few given in `/logos` or add new one new ascii art!
 - `get_vram()` — Total VRAM (e.g. `8.00 GiB`)
 
 ## Contributing
+
 You're free to do anything with it!
 
 The use gen AI is fine but it is discouraged to depend on it 100%. Reading and understanding what the AI generated before submitting goes a long way <3
