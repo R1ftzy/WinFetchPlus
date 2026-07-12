@@ -36,6 +36,8 @@ winfetch [logo_name]
 Edit `config.c` to your liking using the available functions. All functions return a string, so they work directly inside `snprintf`.
 For logos, you can use the few given in `/logos` or add new one new ascii art!
 
+[Epic tool to generate ASCII art](https://github.com/nishchay-joshi/ascii-generator-cli)
+
 ### Available functions
 
 - `get_user()` — Your username (e.g. `r1ftzy`)
