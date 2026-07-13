@@ -25,6 +25,6 @@ char* get_ram_used(){
   mem.dwLength = sizeof(mem);  
   static char used[64];
   GlobalMemoryStatusEx(&mem);
-  snprintf(used, sizeof(used), "%.2f GiB", (float)(mem.ullTotalPhys - mem.ullAvailPhys) / BtoGiB);
+  snprintf(used, sizeof(mem), "%.2f GiB", (float)(mem.ullTotalPhys - mem.ullAvailPhys) / BtoGiB);
   return used;
 }
