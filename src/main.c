@@ -4,7 +4,6 @@
 #include "config.h"
 #include "demo.h"
 #include <string.h>
-#include "demos/cube.h"
 #include "renderer.h"
 
 /* some cool unicode shi
