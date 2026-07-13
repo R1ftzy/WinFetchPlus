@@ -6,6 +6,10 @@ winfetch: src/main.c \
           src/gpu.c \
           src/display.c \
           src/config.c \
-          src/renderer.c
+          src/renderer.c \
+          src/math3d.c \
+          src/demo.c \
+          src/demos/cube.c \
+          
 	mkdir -p bin
 	gcc $^ -o bin/$@ -ladvapi32 -lpowrprof -lm

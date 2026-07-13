@@ -13,6 +13,42 @@ static COORD bufferPos = {0, 0};
 static CONSOLE_CURSOR_INFO oldCursor;
 static RendererSize size;
 
+
+void renderer_line(
+    int x0,
+    int y0,
+    int x1,
+    int y1,
+    char c,
+    WORD color){
+    int dx = abs(x1 - x0);
+    int sx = x0 < x1 ? 1 : -1;
+
+    int dy = -abs(y1 - y0);
+    int sy = y0 < y1 ? 1 : -1;
+
+    int err = dx + dy;
+
+    while (1){
+        renderer_put(x0, y0, c, color);
+
+        if (x0 == x1 && y0 == y1)
+            break;
+
+        int e2 = 2 * err;
+
+        if (e2 >= dy){
+            err += dy;
+            x0 += sx;
+        }
+
+        if (e2 <= dx){
+            err += dx;
+            y0 += sy;
+        }
+    }
+}
+
 int renderer_init(void){
 
     hConsole = GetStdHandle(STD_OUTPUT_HANDLE);

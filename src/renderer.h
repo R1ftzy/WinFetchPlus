@@ -19,6 +19,14 @@ void renderer_present(void);
 // Drawing 
 void renderer_put(int x, int y, char c, WORD color);
 void renderer_put_string(int x, int y, const char *str, WORD color);
+void renderer_line(
+    int x0,
+    int y0,
+    int x1,
+    int y1,
+    char c,
+    WORD color
+);
 
 // Utility 
 RendererSize renderer_size(void);
