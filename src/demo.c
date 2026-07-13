@@ -4,19 +4,31 @@
 #include "renderer.h"
 
 #include "demos/cube.h"
+#include "demos/starfield.h"
+
+static const Demo demos[] =
+{
+    { "--cube",      cube_demo },
+    { "--starfield", starfield_demo },
+};
+
+#define DEMO_COUNT (sizeof(demos) / sizeof(demos[0]))
 
 int run_demo(const char *arg)
 {
-    if (!renderer_init())
-        return 0;
-
-    if (strcmp(arg, "--cube") == 0)
+    for (size_t i = 0; i < DEMO_COUNT; i++)
     {
-        cube_demo();
-        renderer_shutdown();
-        return 1;
+        if (strcmp(arg, demos[i].flag) == 0)
+        {
+            if (!renderer_init())
+                return 0;
+
+            demos[i].run();
+
+            renderer_shutdown();
+            return 1;
+        }
     }
 
-    renderer_shutdown();
     return 0;
 }

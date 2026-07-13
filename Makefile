@@ -10,6 +10,7 @@ winfetch: src/main.c \
           src/math3d.c \
           src/demo.c \
           src/demos/cube.c \
+          src/demos/starfield.c \
           
 	mkdir -p bin
 	gcc $^ -o bin/$@ -ladvapi32 -lpowrprof -lm
