@@ -13,6 +13,7 @@ Still simple but more advanced than old [WinFetch](https://github.com/METE0R4/Wi
 
 Feel free to try out [dev_setup](https://github.com/TaH00R/dev_setup) for a one-stop way to install the tools you need.
 
+
 ## Setup
 
 - Clone/download the repo and go into that folder
@@ -25,7 +26,7 @@ make
 - This will use the config in ~~`main.c`~~ `config.c`
 - Your exe will be in the `/bin` folder to use
 - Add bin path to your environment variables to use from anywhere
-- Run using optional logo arguement
+- Run using optional logo argument
 
 ```
 winfetch [logo_name]
