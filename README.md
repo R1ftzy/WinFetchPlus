@@ -25,7 +25,7 @@ make
 - This will use the config in ~~`main.c`~~ `config.c`
 - Your exe will be in the `/bin` folder to use
 - Add bin path to your environment variables to use from anywhere
-- Run using optional logo arguement
+- Run using optional logo argument
 
 ```
 winfetch [logo_name]
