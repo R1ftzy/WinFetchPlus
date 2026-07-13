@@ -7,7 +7,7 @@ char* get_ram_available(){
   mem.dwLength = sizeof(mem);  
   static char free[64];
   GlobalMemoryStatusEx(&mem);
-  snprintf(free, sizeof(mem), "%.2f GiB", (float)mem.ullAvailPhys / BtoGiB);
+  snprintf(free, sizeof(free), "%.2f GiB", (float)mem.ullAvailPhys / BtoGiB);
   return free;
 }
 

@@ -13,6 +13,7 @@ Still simple but more advanced than old [WinFetch](https://github.com/METE0R4/Wi
 
 Feel free to try out [dev_setup](https://github.com/TaH00R/dev_setup) for a one-stop way to install the tools you need.
 
+
 ## Setup
 
 - Clone/download the repo and go into that folder
