@@ -6,12 +6,14 @@
 #include "demos/cube.h"
 #include "demos/starfield.h"
 #include "demos/matrix.h"
+#include "demos/fire.h"
 
 static const Demo demos[] =
 {
     { "--cube",      cube_demo },
     { "--starfield", starfield_demo },
     { "--matrix",      matrix_demo },
+    { "--fire",      fire_demo },
 };
 
 #define DEMO_COUNT (sizeof(demos) / sizeof(demos[0]))
